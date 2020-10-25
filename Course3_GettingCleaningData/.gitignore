@@ -1,0 +1,5 @@
+# ignore directory with raw data
+UCI*HAR*Dataset/
+
+# ignore raw zipped file
+Dataset.zip
