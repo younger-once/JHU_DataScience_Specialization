@@ -24,8 +24,6 @@ This repo contains the following primary data files:
 The `run_analysis.r` script performs the following tasks:  
   
  1. Downloads and unzips original data files
- <br>
- 
  2. Reads activity labels file
  3. Reads and processes feature names file
  	-  Retains features with mean and standard deviation measurements (i.e. features with terms "mean()" or "std()")
