@@ -7,8 +7,7 @@ This repo contains an R script that downloads, wrangles, and summarizes wearable
 
 The data set is based on sensor signals extracted from Samsung Galaxy S II smartphones worn by 30 subjects at waist level.  Subjects were recorded while performing various functions such as standing, sitting, or walking.  
  
- A full description of the data set can be found [here]
-(http://archive.ics.uci.edu/ml/datasets/[Human+Activity+Recognition+Using+Smartphones).
+ A full description of the data set can be found [here](http://archive.ics.uci.edu/ml/datasets/[Human+Activity+Recognition+Using+Smartphones).
   
 Raw data files used in this analysis were downloaded [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  
   
@@ -44,7 +43,7 @@ The `run_analysis.r` script performs the following tasks:
 - Outputs summary data frame as csv file, `tidy_summary_data.csv`
 
 ## Tidy Data Commentary
-According to the [R for Data Science](https://r4ds.had.co.nz/tidy-data.html), tidy data is defined as follows: 
+According to [R for Data Science](https://r4ds.had.co.nz/tidy-data.html), tidy data is defined as follows: 
 
 -  Each variable is assigned to a unique column
 -  Every observation is organized into a single row
