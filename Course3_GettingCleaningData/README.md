@@ -1,7 +1,7 @@
 # Getting and Cleaning Data Project
 
 ## Overview  
-This repo contains an R script that downloads, wrangles, and summarizes wearable sensor data.  The script outputs a csv file in tidy data format.  
+This repo contains an R script that downloads, wrangles, and summarizes wearable sensor data.  The script outputs a text file in tidy data format.  
  
 ## Raw Data    
 
@@ -40,7 +40,7 @@ The `run_analysis.r` script performs the following tasks:
 	- activity
 	- feature combinations
 	- measurement type (mean or standard deviation)
-- Outputs summary data frame as csv file, `tidy_summary_data.csv`
+- Outputs summary data frame as txt file, `tidy_summary_data.csv`
 
 ## Tidy Data Commentary
 According to [R for Data Science](https://r4ds.had.co.nz/tidy-data.html), tidy data is defined as follows: 

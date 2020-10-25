@@ -73,7 +73,7 @@ df <- df %>% gather("var","val",-dataset,-subject,-activity) %>%
 df_summary <- df %>% group_by(subject,activity,domain,signal,instrument,jerk,measureType,directionMag) %>%
   summarise(meanVal=mean(val)) %>% spread(measureType,meanVal)
 
-# save summary data frame as csv file
-write.csv(df_summary,"../../tidy_summary_data.csv",row.names = F)
+# save summary data frame as text file
+write.table(df_summary,"../tidy_summary_data.txt",row.names = F)
 
 
