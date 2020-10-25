@@ -15,7 +15,7 @@ Raw data files used in this analysis were downloaded [here](https://d396qusza40o
 This repo contains the following primary data files:  
   
 * `run_analysis.r` - R script to process raw data and output tidy dataset. 
-* `tidy_summary_data.csv` - file output (in tidy format)
+* `tidy_summary_data.txt` - file output (in tidy format)
 *  `codebook.md` - data dictionary with additional details on data transformations
 
 ## Data Processing Steps
@@ -40,7 +40,7 @@ The `run_analysis.r` script performs the following tasks:
 	- activity
 	- feature combinations
 	- measurement type (mean or standard deviation)
-- Outputs summary data frame as txt file, `tidy_summary_data.csv`
+- Outputs summary data frame as txt file, `tidy_summary_data.txt`
 
 ## Tidy Data Commentary
 According to [R for Data Science](https://r4ds.had.co.nz/tidy-data.html), tidy data is defined as follows: 
