@@ -9,6 +9,8 @@ coal <- apply(SCC,1,function(x) any(grep("coal",tolower(x))))
 NEI_coal <- merge(NEI, SCC[coal,], by = "SCC")
 
 # plot
+png('plot4.png')
+
 ggplot(NEI_coal, aes(year,Emissions/1e6)) + 
   stat_summary(fun=sum,geom="line", color="red") +
   stat_summary(fun=sum,geom="point",color="red") +
@@ -16,9 +18,6 @@ ggplot(NEI_coal, aes(year,Emissions/1e6)) +
   labs(y= "tons (millions)", title = "Total U.S.Coal PM2.5 Emissions by Year") + 
   scale_x_continuous(breaks = seq(1999,2008,3)) + 
   ylim(0,0.70)
-
-#save plot
-ggsave('plot4.png')
 
 # turn off graphical device
 dev.off()
