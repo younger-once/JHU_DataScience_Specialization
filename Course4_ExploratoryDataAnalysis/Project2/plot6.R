@@ -43,21 +43,11 @@ p2 <- ggplot(balt_la, aes(year,Emissions_rel, color=city)) +
   scale_x_continuous(breaks = seq(1999,2008,3)) +
   scale_color_brewer(type = "qual",palette=6) 
 
-grid.arrange(p1,p2)
+# arnage plots in 2 x 1 grid
+gA <- ggplotGrob(p1)
+gB <- ggplotGrob(p2)
+grid::grid.newpage()
+grid::grid.draw(rbind(gA, gB))
 
+# turn off graphical device
 dev.off()
-
-# # aggregate plots together into one master plot  
-# combined_plot <- arrangeGrob(p1,p2, ncol=1)
-# 
-# gA <- ggplotGrob(p1)
-# gB <- ggplotGrob(p2)
-# #grid::grid.newpage()
-# #grid::grid.draw(rbind(gA, gB))
-# combined_plot <- arrangeGrob(gA,gB, ncol=1)
-# 
-# # save as png file
-# ggsave("plot6.png",combined_plot, width=6, height=4)
-# 
-# # turn off graphical device
-# dev.off()
