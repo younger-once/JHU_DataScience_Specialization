@@ -32,10 +32,11 @@ The `download_files.R` script downloads and unzips the two data files into the c
 
 1. Using base R graphics, this plot shows that the total trend in emissions in the U.S. is decreasing over time.  Relevant files are `plot1.R` and `plot1.png`.
 2. Using base R graphics, this plot indicates an overall decreasing trend of emissions in Baltimore City, MD; however, the trend is not consistent across all time periods.  Relevant files are `plot2.R` and `plot2.png`.
-3.  Using the ggplot2 plotting library, this plot depicts the trend in Emissions within Baltimore City, MD over time and for four different emission types.  With the exception of the "POINT" type, each emission type shows a flat or decreasing trend in each successive time period.  Refer to files `plot3.R` and `plot3.png`.
+3.  Using the ggplot2 plotting library, this plot depicts the trend in Emissions within Baltimore, MD over time and for four different emission types.  With the exception of the "POINT" type, each emission type shows a flat or decreasing trend in each successive time period.  Refer to files `plot3.R` and `plot3.png`.
 4. Using ggplot2, plot four indicates that emissions due to coal were decreasing or relatively flat over successive time periods&mdash;see `plot4.R` and `plot4.png`.
-5. Created using the ggplot2 library, plot five shows motor vehicle emissions in Baltimore City, MD have consistently decreased over time.  Note: motor vehicle-related emissions were identify by SCC codes with a corresponding Short.Name field containing the term "veh"&mdash; short for "vehicle".  Relevant files are `plot5.R` and `plot5.png`.  
-6. Plot six was generated using ggplot2, and depicts a pattern of generally decreasing albeit somewhat noisy trends in PM2.5 emissions. Los Angeles experienced a much larger decrease in PM2.5 emissions over the 9 year period.  However, when viewing 2008 vs. 1999 levels on a relative scale, Baltimore experienced the larger decrease.  For details, refer to `plot6.r` and `plot6.png`.      
+5. Created using the ggplot2 library, plot five shows motor vehicle emissions in Baltimore City, MD have consistently decreased over time.  Note: motor vehicle-related emissions were identify by SCC codes with a corresponding Short.Name field containing the term "veh"&mdash;short for "vehicle".  Relevant files are `plot5.R` and `plot5.png`.  
+6. Plot six was generated using ggplot2, and depicts a small net increase in motor vehicle emissions in LA over the nine year period.  Baltimore, on the other hand, experienced consistent decreases in vehicle emissions throughout the nine year period. 
+Los Angeles exhibited much larger swings in emissions (both positive and negative) throughout the period.  When viewed on a relative basis, however, Baltimore's history depicts more pronounced changes, with Baltimore's 2008 emissions down roughly 75% from levels recorded in 1999.  For details, refer to `plot6.r` and `plot6.png`.      
 
  
  
